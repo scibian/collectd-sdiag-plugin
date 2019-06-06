@@ -1,0 +1,5 @@
+collectd-sdiag-plugin (0.1-0sci8u1) scibian8; urgency=medium
+
+  * Initial release
+
+ -- Rémi Palancher <remi-externe.palancher@edf.fr>  Thu, 6 Jun 2019 11:26:42 +0200

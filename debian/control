@@ -1,0 +1,21 @@
+Source: collectd-sdiag-plugin
+Priority: extra
+Maintainer: Scibian Project <packaging@scibian.org>
+Section: admin
+Build-Depends:
+ debhelper (>= 9),
+Standards-Version: 3.9.6
+Vcs-Browser: https://github.com/scibian/collectd-sdiag-plugin
+Vcs-Git: https://github.com/scibian/collectd-sdiag-plugin.git
+
+Package: collectd-sdiag-plugin
+Architecture: any
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+ collectd,
+ python-pyslurm,
+Description: Collectd python plugin to get Slurm WLM statistics
+ This package provide a Python script that can be used as a Collectd plugin to
+ collect metrics (scheduling, backfilling, RPC, throughput, etc) about Slurm
+ workload manager on HPC clusters.
