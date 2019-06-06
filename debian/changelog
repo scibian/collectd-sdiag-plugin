@@ -1,3 +1,9 @@
+collectd-sdiag-plugin (0.1-0sci9u1) scibian9; urgency=medium
+
+  * Scibian9 release.
+
+ -- Rémi Palancher <remi-externe.palancher@edf.fr>  Thu, 06 Jun 2019 12:11:16 +0200
+
 collectd-sdiag-plugin (0.1-0sci8u1) scibian8; urgency=medium
 
   * Initial release
