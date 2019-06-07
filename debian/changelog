@@ -1,3 +1,9 @@
+collectd-sdiag-plugin (0.1-0sci9u2) scibian9; urgency=medium
+
+  * Fix arch from any to all
+
+ -- Rémi Palancher <remi-externe.palancher@edf.fr>  Fri, 07 Jun 2019 08:33:33 +0200
+
 collectd-sdiag-plugin (0.1-0sci9u1) scibian9; urgency=medium
 
   * Scibian9 release.
