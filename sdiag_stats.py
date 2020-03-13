@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
-# Copyright (C) 2019 EDF SA
+# Copyright (C) 2020 EDF SA
 #
 # Authors: CCN - HPC <dsp-cspit-ccn-hpc@edf.fr>
 #
@@ -22,16 +22,20 @@
 # <http://www.gnu.org/licenses/>.
 
 import pyslurm
-
+import time
 
 def get_stats(debug=False):
 
     stats = {}
-
+    time_before = time.time()
     try:
         sdiag = pyslurm.statistics().get()
     except:
         return None
+    time_after = time.time()
+
+    # Plugin Stats
+    stats["stats_get_time"] = time_after - time_before
 
     # Slurmctld Stats
     stats["server_thread_count"] = sdiag.get("server_thread_count")
@@ -94,18 +98,15 @@ def get_stats(debug=False):
 
     # RPC users stats
     for user, u_metrics in sdiag.get("rpc_user_stats").items():
+        metric_prefixes = ['rpc_user_' + user + '_']
         if user not in ['root', 'slurm']:
-            user = 'users'
-        metric_prefix = 'rpc_user_' + user + '_'
-        if metric_prefix + 'count' in stats:
+            metric_prefixes += ['rpc_user_users_']
+        for metric_prefix in metric_prefixes:
+            if metric_prefix + 'count' not in stats:
+                stats[metric_prefix + 'count'] = 0
+                stats[metric_prefix + 'total_time'] = 0
             stats[metric_prefix + 'count'] += u_metrics[u'count']
             stats[metric_prefix + 'total_time'] += u_metrics[u'total_time']
-            stats[metric_prefix + 'ave_time'] = \
-                stats[metric_prefix + 'total_time'] / \
-                stats[metric_prefix + 'count']
-        else:
-            stats[metric_prefix + 'count'] = u_metrics[u'count']
-            stats[metric_prefix + 'total_time'] = u_metrics[u'total_time']
             stats[metric_prefix + 'ave_time'] = \
                 stats[metric_prefix + 'total_time'] / \
                 stats[metric_prefix + 'count']
