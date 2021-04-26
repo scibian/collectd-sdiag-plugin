@@ -1,3 +1,9 @@
+collectd-sdiag-plugin (1.0-0sci8u2) scibian8; urgency=medium
+
+  * Build for 20.11
+
+ -- Romaric Kanyamibwa <romaric-externe.kanyamibwa@edf.fr>  Mon, 26 Apr 2021 20:04:48 +0200
+
 collectd-sdiag-plugin (1.0-0sci8u1) scibian8; urgency=medium
 
   * New upstream version 1.0
