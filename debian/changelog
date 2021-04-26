@@ -1,3 +1,10 @@
+collectd-sdiag-plugin (1.0-0sci10u1) scibian10; urgency=medium
+
+  * Build for 20.11
+  * Bump compat to 11
+
+ -- Romaric Kanyamibwa <romaric-externe.kanyamibwa@edf.fr>  Mon, 26 Apr 2021 20:45:19 +0200
+
 collectd-sdiag-plugin (1.0-0sci9u2) scibian9; urgency=medium
 
   * Build for 20.11
