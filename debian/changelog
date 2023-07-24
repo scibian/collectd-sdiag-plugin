@@ -1,3 +1,9 @@
+collectd-sdiag-plugin (1.0-0sci9u5) scibian9; urgency=medium
+
+  * Increments version for slurm 23.02.3
+
+ -- Nilce BOUSSAMBA <nilce-externe.boussamba@edf.fr>  Mon, 24 Jul 2023 16:20:59 +0200
+
 collectd-sdiag-plugin (1.0-0sci9u4) scibian9; urgency=medium
 
   * Rebuild for Slurm 23.02
