@@ -1,3 +1,9 @@
+collectd-sdiag-plugin (1.0-0sci9u6) scibian9; urgency=medium
+
+  * Change python-pyslurm to python3-pyslurm dependancy.
+
+ -- Nilce BOUSSAMBA <nilce-externe.boussamba@.edf.fr>  Wed, 27 Sep 2023 09:39:02 +0200
+
 collectd-sdiag-plugin (1.0-0sci9u5) scibian9; urgency=medium
 
   * Increments version for slurm 23.02.3
