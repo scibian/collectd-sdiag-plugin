@@ -14,7 +14,7 @@ Depends:
  ${shlibs:Depends},
  ${misc:Depends},
  collectd,
- python-pyslurm,
+ python3-pyslurm,
 Description: Collectd python plugin to get Slurm WLM statistics
  This package provide a Python script that can be used as a Collectd plugin to
  collect metrics (scheduling, backfilling, RPC, throughput, etc) about Slurm
