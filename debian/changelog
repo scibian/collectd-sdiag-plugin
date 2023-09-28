@@ -1,3 +1,9 @@
+collectd-sdiag-plugin (2.0-0sci9u1) scibian9; urgency=medium
+
+  * New upstream version 2.0
+
+ -- Mathieu Chouquet-Stringer <mathieu-externe.chouquet-stringer@edf.fr>  Thu, 28 Sep 2023 18:38:45 +0200
+
 collectd-sdiag-plugin (1.0-0sci9u6) scibian9; urgency=medium
 
   * Change python-pyslurm to python3-pyslurm dependancy.
