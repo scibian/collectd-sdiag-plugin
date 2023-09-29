@@ -1,1 +1,1 @@
-sdiag_stats.py usr/share/python/collectd/plugins
+scripts/sdiag_stats.py usr/share/python/collectd/plugins
