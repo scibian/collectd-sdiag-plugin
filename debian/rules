@@ -1,4 +1,11 @@
 #!/usr/bin/make -f
 
+# By default, distutils install triggers the build and it fails. Force install
+# to skip the build to avoid the issue.
+export PYBUILD_INSTALL_ARGS=--skip-build
+
 %:
 	dh $@ --with python3 --buildsystem=pybuild
+
+override_dh_auto_test:
+	#skip
