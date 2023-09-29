@@ -4,6 +4,9 @@ Maintainer: Scibian Project <packaging@scibian.org>
 Section: admin
 Build-Depends:
  debhelper (>= 9),
+ dh-python,
+ python3-all,
+ python3-setuptools,
 Standards-Version: 3.9.6
 Vcs-Browser: https://github.com/scibian/collectd-sdiag-plugin
 Vcs-Git: https://github.com/scibian/collectd-sdiag-plugin.git
@@ -13,6 +16,7 @@ Architecture: all
 Depends:
  ${shlibs:Depends},
  ${misc:Depends},
+ ${python3:Depends},
  collectd,
  python3-pyslurm,
 Description: Collectd python plugin to get Slurm WLM statistics
