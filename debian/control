@@ -9,6 +9,7 @@ Build-Depends:
  python3-all,
  python3-setuptools,
  cython3,
+ python3-pyslurm,
 Standards-Version: 3.9.6
 Vcs-Browser: https://github.com/scibian/collectd-sdiag-plugin
 Vcs-Git: https://github.com/scibian/collectd-sdiag-plugin.git
